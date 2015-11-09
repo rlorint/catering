@@ -1,0 +1,6 @@
+<div class="border">
+    <div class="foodName">{{item.name}}{{tab}}</div>
+    <img class="foodPhoto" ng-src='{{item.photo}}' ng-click="clicked()"/>
+    <button type="button" class="orderButton" ng-click="cardCtrl.newOrder()">COMANDA</button>
+    <div class="price">{{item.price}}</div>
+</div>
