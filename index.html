@@ -38,17 +38,19 @@
 		<script src="lib/nv.d3_scroll.js"></script>
 		<script src="lib/angularjs-nvd3-directives.js"></script>
 
-		<script type="application/x-javascript" src="lib/JORAheader.js"></script>
-		<script type="application/x-javascript" src="lib/JORAlib.js"></script>
+		
 		<script type="application/x-javascript" src="src/app.js"></script>
 
 		<!-- Controllers -->
 		<script type="application/x-javascript" src="src/Controllers/HomeController.js"></script>
+		<script type="application/x-javascript" src="src/Controllers/ShoppingCartItemsController.js"></script>
+
 
 		<!-- Directives -->
-		<script type="application/x-javascript" src="src/Directives/itemCard.js"></script>
-		<!-- /*<script type="application/x-javascript" src="src/SecondPageController.js"></script>
-		<script type="application/x-javascript" src="src/AccordionPageController.js"></script>*/ -->
+		<script type="application/x-javascript" src="src/Directives/itemCard.js"></script>	
+		<script type="application/x-javascript" src="src/Directives/orderedItem.js"></script>	
+			
+		
 
 		<!-- Services -->
 		<script type="application/x-javascript" src="src/Services/shoppingCart.js"></script> 
@@ -56,6 +58,26 @@
 	</head>
 
 	<body>
+
+		<div class="header">
+		    <div class="row">
+			    <div class="col-md-2">
+			        <img src="photos/bio.png" style="width:100px;margin-top:18px"/>
+			    </div>
+
+			    <div class="col-md-3">
+			        <h2>BioFresh</h2>
+			    </div>
+		    </div>
+
+		    <div class="row">
+		         <div class="col-md-offset-5">
+		        <h4><i>Manancare sanatoasa pentru mintea si corpul tau!</i></h4>
+		         </div>
+		    </div>
+		</div>
+
 		<div ng-view></div>
+	
 	</body>
 </html>

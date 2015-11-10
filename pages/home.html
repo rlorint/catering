@@ -1,28 +1,14 @@
-<div class="header">
-    <div class="row">
-    <div class="col-md-2">
-        <img src="photos/bio.png" style="width:100px;margin-top:18px"/>
-    </div>
-    <div class="col-md-3">
-        <h2>BioFresh</h2>
-    </div>
-    </div>
 
-    <div class="row">
-         <div class="col-md-offset-5">
-        <h4><i>Manancare sanatoasa pentru mintea si corpul tau!</i></h4>
-         </div>
-    </div>
-</div>
 
 <div class="menuContent" ng-init="tab = 2; category = 2">
   <!--  <ul class="nav nav-pills nav-justified custom"> -->
   <ul class="nav navbar-nav custom">
-      <li role="presentation"><a href ng-click="tab = 1"><i ng-class="tab === 1 ? 'fa fa-cutlery' :''"></i> Salatess{{ShoppingCart.nrItems}}aa</a></li>
+      <li role="presentation"><a href ng-click="tab = 1"><i ng-class="tab === 1 ? 'fa fa-cutlery' :''"></i> Salate</a></li>
       <li role="presentation"><a href ng-click="tab = 2"><i ng-class="tab === 2 ? 'fa fa-cutlery' :''"></i> Specialitati</a></li>
       <li role="presentation"><a href ng-click="tab = 3"><i ng-class="tab === 3 ? 'fa fa-cutlery' :''"></i> Vegetarian</a></li>
       <li role="presentation"><a href ng-click="tab = 4"><i ng-class="tab === 4 ? 'fa fa-cutlery' :''"></i> Desert</a></li>
-      <li role="presentation">&nbsp &nbsp &nbsp&nbsp &nbsp <img src="photos/cart.png" class="cos"/></li>
+      <li role="presentation"><a href="#/shoppingCartItems" class="shopCart"> &nbsp &nbsp &nbsp&nbsp &nbsp <img src="photos/cart.png" class="cos"/>
+              <div class="redCircle" ng-show="nrItems() > 0"><span style="margin-left:6px;font-size:18px">{{nrItems()}}</span></div></a></li>
     </ul>
 </div>
 
@@ -35,9 +21,7 @@
         <item-card item="item"></item-card>
       </div> 
     </div>
-  <!-- </div>
-
-  <div class="col-md-3"></div> -->
+  
 
 
 

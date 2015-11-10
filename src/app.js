@@ -18,9 +18,9 @@ app.config(function($routeProvider) {
     })
     
     // route for the Second page
-    .when('/dashboard', {
-        templateUrl : 'pages/dashboard.html',
-        controller : 'AccordionPageController'
+    .when('/shoppingCartItems', {
+        templateUrl : 'pages/shoppingCartItems.html',
+        controller : 'ShoppingCartItemsController'
     })
 
     .otherwise({redirectTo : 'home'})

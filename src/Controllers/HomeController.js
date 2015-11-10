@@ -87,5 +87,7 @@ $scope.items = [
    
     $scope.activeFlag = false;
 
-   // $scope.calculatedHeight = 
+
+    $scope.nrItems = ShoppingCart.getCount;
+
 }]);
