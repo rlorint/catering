@@ -15,7 +15,8 @@ $scope.items = [
         category : 1,
         name: 'Salata Caesar cu creveti',
         price: '13 RON',
-        photo: 'photos/caesar.jpg'
+        photo: 'photos/caesar.jpg',
+        description: 'Salta Caesar cu creveti, masline, rosii, salata verde si sos alb'
     },
     {
         category : 1,
@@ -75,7 +76,8 @@ $scope.items = [
         category : 4,
         name: 'Chec cu visine',
         price: '9 RON',
-        photo: 'photos/chec.jpg'
+        photo: 'photos/chec.jpg',
+        description: 'Chec de casa facut cu faina si oua de casa, unt si gem de visine'
     }
 ];
     $scope.clicked = function(){

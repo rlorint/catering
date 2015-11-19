@@ -14,7 +14,7 @@ app.config(function($routeProvider) {
     // route for the Second page
     .when('/dashboard', {
         templateUrl : 'pages/dashboard.html',
-        /*controller : 'SecondPageController'*/
+        controller : 'DashboardController'
     })
     
     // route for the Second page

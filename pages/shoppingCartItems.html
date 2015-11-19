@@ -1,9 +1,10 @@
 <div class="wrapper">
 	<div class="row">
-		<div class="col-md-offset-1 titleWrapper">Comanda dvoastra cuprinde:</div>
+		<div class="col-md-6 col-md-offset-1 titleWrapper">Comanda dvoastra cuprinde:</div>
+    <div class="col-md-3 col-md-offset-2 pull-right"><a href="#/home" class="backButton">Mai adauga</a></div>
 	</div>
 
-	<div class="well orderedItem" ng-repeat="item in orderedItems">
+	<div class="well orderedItem" ng-repeat="item in orders">
 
 		<ordered-item item="item"></ordered-item>
 	</div>

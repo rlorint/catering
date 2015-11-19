@@ -1,5 +1,7 @@
-app.controller('ShoppingCartItemsController', ['$scope','$location', function($scope,$location) {
+app.controller('ShoppingCartItemsController', ['$scope','$location','ShoppingCart','$route', function($scope,$location,ShoppingCart,$route) {
 
+    $scope.orders = ShoppingCart.getOrders();
+    console.log("orders"+$scope.orders);
 	$scope.orderedItems = [
 
     {
@@ -22,6 +24,7 @@ app.controller('ShoppingCartItemsController', ['$scope','$location', function($s
     $scope.go = function(path) {
         console.log("pat"+path);
         $location.path(path);
+        
         //$window.location.href = '/offers';
     };
 }])
