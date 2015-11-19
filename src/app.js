@@ -12,9 +12,9 @@ app.config(function($routeProvider) {
     })
 
     // route for the Second page
-    .when('/login', {
-        templateUrl : 'pages/login.html',
-        controller : 'SecondPageController'
+    .when('/dashboard', {
+        templateUrl : 'pages/dashboard.html',
+        /*controller : 'SecondPageController'*/
     })
     
     // route for the Second page

@@ -31,9 +31,9 @@ $scope.items = [
     },
     {
         category : 2,
-        name: 'Naut',
+        name: 'Orez cu soia',
         price: '12 RON',
-        photo: 'photos/naut.jpg'
+        photo: 'photos/orez.png'
     },
     {
         category : 2,

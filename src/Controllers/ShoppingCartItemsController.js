@@ -1,4 +1,4 @@
-app.controller('ShoppingCartItemsController', ['$scope', function($scope) {
+app.controller('ShoppingCartItemsController', ['$scope','$location', function($scope,$location) {
 
 	$scope.orderedItems = [
 
@@ -15,4 +15,13 @@ app.controller('ShoppingCartItemsController', ['$scope', function($scope) {
         photo: 'photos/caesar.jpg'
     }];
 
+    $scope.submitForm = function() {
+        console.log($scope.client);
+    }
+
+    $scope.go = function(path) {
+        console.log("pat"+path);
+        $location.path(path);
+        //$window.location.href = '/offers';
+    };
 }])
